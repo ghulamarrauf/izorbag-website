@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Izorbag | Eksklusivitas dalam Genggaman</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Izorbag<span>.</span></h1>
+      <p>Mengubah Kain Menjadi Karya Seni Abadi</p>
+      <a href="#pesan" class="btn-hero">Pesan Sekarang</a>
+    </div>
+  </header>
+
+  <nav id="navbar">
+    <div class="nav-links">
+      <a href="#tentang">Tentang</a>
+      <a href="#proses">Proses</a>
+      <a href="#galeri">Koleksi</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="tentang" class="card fade-in">
+      <div class="section-title">
+        <h2>Tentang Kami</h2>
+        <div class="underline"></div>
+      </div>
+      <p>Kami adalah pengrajin tas <strong>Izorbag</strong> yang berdedikasi pada kualitas dan detail perfeksionis. Setiap jahitan adalah bentuk cinta kami terhadap kerajinan tangan Indonesia.</p>
+    </section>
+
+    <section id="proses" class="card fade-in">
+      <div class="section-title">
+        <h2>Proses Pembuatan</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="process-grid">
+        <div class="step"><span>01</span> Bahan Premium</div>
+        <div class="step"><span>02</span> Pola Presisi</div>
+        <div class="step"><span>03</span> Jahitan Tangan</div>
+        <div class="step"><span>04</span> Quality Control</div>
+      </div>
+      <button class="btn-info" onclick="alert('Proses pembuatan tas Izorbag membutuhkan waktu 3-5 hari kerja demi hasil maksimal.')">Estimasi Waktu</button>
+    </section>
+
+    <section id="galeri" class="card fade-in">
+      <div class="section-title">
+        <h2>Koleksi Unggulan</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="gallery">
+        <div class="img-container">
+          <img src="https://via.placeholder.com/400x500?text=Premium+Leather" alt="Tas Kulit">
+          <div class="overlay">Tas Kulit</div>
+        </div>
+        <div class="img-container">
+          <img src="https://via.placeholder.com/400x500?text=Modern+Fabric" alt="Tas Kain">
+          <div class="overlay">Tas Kain</div>
+        </div>
+        <div class="img-container">
+          <img src="https://via.placeholder.com/400x500?text=Woven+Art" alt="Tas Anyaman">
+          <div class="overlay">Tas Anyaman</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pesan" class="card fade-in">
+      <div class="section-title">
+        <h2>Form Pemesanan</h2>
+        <div class="underline"></div>
+      </div>
+      <form>
+        <div class="form-group">
+          <input type="text" id="nama" placeholder="Nama Lengkap" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Alamat Email" required>
+        </div>
+        <div class="form-group">
+          <select id="jenis">
+            <option value="kulit">Tas Kulit Izorbag (Rp750.000)</option>
+            <option value="kain">Tas Kain Izorbag (Rp350.000)</option>
+            <option value="anyaman">Tas Anyaman Izorbag (Rp450.000)</option>
+          </select>
+        </div>
+        <textarea id="pesan" rows="4" placeholder="Catatan Tambahan..."></textarea>
+        <button type="submit" class="btn-submit">Kirim Pesanan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <h3>Izorbag Workshop</h3>
+      <p>WhatsApp: +62 812-3456-7890 | Email: info@tas-izorbag.com</p>
+    </div>
+    <p class="copyright">&copy; 2026 Izorbag Studio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
