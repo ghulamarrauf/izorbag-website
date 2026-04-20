@@ -9,9 +9,10 @@
 </head>
 <body>
   <header>
-    <div class="header-content">
+    <div class="header-content fade-in">
+      <p class="subtitle">ESTABLISHED 2026</p>
       <h1>Izorbag<span>.</span></h1>
-      <p>Mengubah Kain Menjadi Karya Seni Abadi</p>
+      <p class="tagline">Mengubah Kain Menjadi Karya Seni Abadi</p>
       <a href="#pesan" class="btn-hero">Pesan Sekarang</a>
     </div>
   </header>
@@ -31,7 +32,7 @@
         <h2>Tentang Kami</h2>
         <div class="underline"></div>
       </div>
-      <p>Kami adalah pengrajin tas <strong>Izorbag</strong> yang berdedikasi pada kualitas dan detail perfeksionis. Setiap jahitan adalah bentuk cinta kami terhadap kerajinan tangan Indonesia.</p>
+      <p class="text-center">Kami adalah pengrajin tas <strong>Izorbag</strong> yang berdedikasi pada kualitas dan detail perfeksionis. Setiap jahitan adalah bentuk cinta kami terhadap kerajinan tangan Indonesia.</p>
     </section>
 
     <section id="proses" class="card fade-in">
@@ -45,7 +46,9 @@
         <div class="step"><span>03</span> Jahitan Tangan</div>
         <div class="step"><span>04</span> Quality Control</div>
       </div>
-      <button class="btn-info" onclick="alert('Proses pembuatan tas Izorbag membutuhkan waktu 3-5 hari kerja demi hasil maksimal.')">Estimasi Waktu</button>
+      <center>
+        <button class="btn-info" onclick="alert('Proses pembuatan tas Izorbag membutuhkan waktu 3-5 hari kerja demi hasil maksimal.')">Estimasi Waktu</button>
+      </center>
     </section>
 
     <section id="galeri" class="card fade-in">
@@ -55,16 +58,16 @@
       </div>
       <div class="gallery">
         <div class="img-container">
-          <img src="https://via.placeholder.com/400x500?text=Premium+Leather" alt="Tas Anak">
-          <div class="overlay">Tas Anak</div>
+          <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&q=80&w=600" alt="Tas Kulit">
+          <div class="overlay">Premium Leather</div>
         </div>
         <div class="img-container">
-          <img src="https://via.placeholder.com/400x500?text=Modern+Fabric" alt="Tas Kain">
-          <div class="overlay">Tas Kain</div>
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80&w=600" alt="Tas Kain">
+          <div class="overlay">Modern Fabric</div>
         </div>
         <div class="img-container">
-          <img src="https://via.placeholder.com/400x500?text=Woven+Art" alt="Tas Gendong">
-          <div class="overlay">Tas Gendong</div>
+          <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=600" alt="Tas Anyaman">
+          <div class="overlay">Woven Art</div>
         </div>
       </div>
     </section>
@@ -84,23 +87,25 @@
         <div class="form-group">
           <select id="jenis">
             <option value="Anak">Tas Anak Izorbag (Rp100.000)</option>
-            <option value="Kain">Tas Kain Izorbag (Rp35.000)</option>
+            <option value="kain">Tas Kain Izorbag (Rp35.000)</option>
             <option value="Gendong">Tas Gendong Izorbag (Rp125.000)</option>
-            <option value="Request">Tas Request Izorbag (Rp75.000-150.000)</option>
+            <option value="Request">Tas Request (Rp75.000 - Rp150.000)</option>
           </select>
         </div>
-        <textarea id="pesan" rows="4" placeholder="Catatan Tambahan..."></textarea>
+        <textarea id="pesan-catatan" rows="4" placeholder="Catatan Tambahan..."></textarea>
         <button type="submit" class="btn-submit">Kirim Pesanan</button>
       </form>
     </section>
   </main>
 
-  <footer>
+  <footer id="kontak">
     <div class="footer-info">
       <h3>Izorbag Workshop</h3>
       <p>WhatsApp: +62 812-3456-7890 | Email: info@tas-izorbag.com</p>
     </div>
     <p class="copyright">&copy; 2026 Izorbag Studio. All Rights Reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
