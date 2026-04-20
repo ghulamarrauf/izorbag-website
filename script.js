@@ -1,9 +1,10 @@
 // Contoh cara menggunakan data produk dari JSON ke dalam Galeri/Pilihan Form
 const dataProduk = {
   "produk": [
-    { "id": 1, "nama": "Tas Kulit Izorbag", "harga": 750000 },
-    { "id": 2, "nama": "Tas Kain Izorbag", "harga": 350000 },
-    { "id": 3, "nama": "Tas Anyaman Izorbag", "harga": 450000 }
+    { "id": 1, "nama": "Tas Anak Izorbag", "harga": 100000 },
+    { "id": 2, "nama": "Tas Kain Izorbag", "harga": 35000 },
+    { "id": 3, "nama": "Tas Gendong Izorbag", "harga": 125000 }
+    { "id": 4, "nama": "Tas Request Izorbag", "harga": 75000-150000 }
   ]
 };
 
