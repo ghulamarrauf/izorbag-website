@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Izorbag | Eksklusivitas dalam Genggaman</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa" title="Hubungi Kami">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
   <header>
     <div class="header-content fade-in">
       <p class="subtitle">ESTABLISHED 2026</p>
@@ -59,15 +64,24 @@
       <div class="gallery">
         <div class="img-container">
           <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&q=80&w=600" alt="Tas Kulit">
-          <div class="overlay">Premium Leather</div>
+          <div class="overlay">
+            <h3>Premium Leather</h3>
+            <p>Rp150.000</p>
+          </div>
         </div>
         <div class="img-container">
           <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80&w=600" alt="Tas Kain">
-          <div class="overlay">Modern Fabric</div>
+          <div class="overlay">
+            <h3>Modern Fabric</h3>
+            <p>Rp35.000</p>
+          </div>
         </div>
         <div class="img-container">
           <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=600" alt="Tas Anyaman">
-          <div class="overlay">Woven Art</div>
+          <div class="overlay">
+            <h3>Woven Art</h3>
+            <p>Rp125.000</p>
+          </div>
         </div>
       </div>
     </section>
@@ -77,14 +91,17 @@
         <h2>Form Pemesanan</h2>
         <div class="underline"></div>
       </div>
-      <form>
+      <form id="orderForm">
         <div class="form-group">
-          <input type="text" id="nama" placeholder="Nama Lengkap" required>
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Contoh: Budi Santoso" required>
         </div>
         <div class="form-group">
-          <input type="email" id="email" placeholder="Alamat Email" required>
+          <label for="email">Alamat Email</label>
+          <input type="email" id="email" placeholder="Contoh: budi@email.com" required>
         </div>
         <div class="form-group">
+          <label for="jenis">Pilih Produk</label>
           <select id="jenis">
             <option value="Anak">Tas Anak Izorbag (Rp100.000)</option>
             <option value="kain">Tas Kain Izorbag (Rp35.000)</option>
@@ -92,18 +109,53 @@
             <option value="Request">Tas Request (Rp75.000 - Rp150.000)</option>
           </select>
         </div>
-        <textarea id="pesan-catatan" rows="4" placeholder="Catatan Tambahan..."></textarea>
+        <div class="form-group">
+          <label for="pesan-catatan">Catatan Tambahan</label>
+          <textarea id="pesan-catatan" rows="4" placeholder="Tulis ukuran atau warna yang Anda inginkan..."></textarea>
+        </div>
         <button type="submit" class="btn-submit">Kirim Pesanan</button>
       </form>
     </section>
   </main>
 
+  <div id="modal-notif" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <i class="fas fa-check-circle" style="font-size: 3rem; color: #c5a02d; margin-bottom: 15px;"></i>
+      <h3>Pesanan Berhasil!</h3>
+      <p>Terima kasih! Pesanan Izorbag Anda telah kami terima dan akan segera diproses.</p>
+      <button class="btn-info" id="closeModalBtn" style="margin-top: 15px;">Tutup</button>
+    </div>
+  </div>
+
   <footer id="kontak">
     <div class="footer-info">
       <h3>Izorbag Workshop</h3>
-      <p>WhatsApp: +62 812-3456-7890 | Email: info@tas-izorbag.com</p>
+      <p><i class="fas fa-phone"></i> WhatsApp: +62 812-3456-7890 | <i class="fas fa-envelope"></i> Email: info@tas-izorbag.com</p>
+      
+      <div class="social-buttons">
+        <a href="https://wa.me/6281234567890" target="_blank" class="btn-wa">
+          <i class="fab fa-whatsapp"></i> Chat WhatsApp
+        </a>
+        <a href="https://instagram.com/izorbag" target="_blank" class="btn-ig">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
+
+      <div class="maps-container">
+        <h4>Lokasi Kami</h4>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.569429559313!2d110.37053531518292!3d-7.795574479998634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN040NydzNC40IlMgMTEw4oCmMjInMTkuNyJF!5e0!3m2!1sen!2sid!4v1640000000000" 
+          width="100%" 
+          height="250" 
+          style="border:0; border-radius:4px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </div>
-    <p class="copyright">&copy; 2026 Izorbag Studio. All Rights Reserved.</p>
+    <p class="copyright">© 2026 Izorbag Studio. All Rights Reserved.</p>
   </footer>
 
   <script src="script.js"></script>
