@@ -41,8 +41,28 @@ document.querySelectorAll('.fade-in').forEach(el => {
   observer.observe(el);
 });
 
-// Form Submission Alert (Dummy)
-document.querySelector('form').addEventListener('submit', (e) => {
+// Modal Logic
+const form = document.getElementById('orderForm');
+const modal = document.getElementById('modal-notif');
+const closeBtn = document.querySelector('.close-modal');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  alert('Terima kasih! Pesanan Izorbag Anda telah kami terima dan akan segera diproses.');
+  modal.style.display = 'flex';
+  form.reset();
 });
+
+closeBtn.onclick = function() {
+  modal.style.display = 'none';
+}
+
+closeModalBtn.onclick = function() {
+  modal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+}
